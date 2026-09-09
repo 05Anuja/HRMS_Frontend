@@ -474,13 +474,301 @@ const OfferAcceptance = () => {
 
                 {candidate?.salary && (
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1 px-5 py-4">
-                    <span className="text-gray-500">Compensation</span>
+                    <span className="text-gray-500">Salary</span>
 
                     <span className="font-medium text-gray-900">
                       {candidate.salary}
                     </span>
                   </div>
                 )}
+              </div>
+            </div>
+
+            {/* Terms & Conditions */}
+            <div className="mt-10">
+              <div className="border border-gray-200 rounded-xl overflow-hidden">
+                <div className="bg-gray-50 px-5 py-4 border-b border-gray-200">
+                  <h3 className="font-semibold text-gray-900 text-lg">
+                    Terms &amp; Conditions
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Please read the following terms and conditions carefully
+                    before accepting the offer.
+                  </p>
+                </div>
+
+                <div className="px-5 sm:px-7 py-6 space-y-8 text-gray-700 leading-7">
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      Introduction
+                    </h4>
+                    <p>
+                      Silgate Solutions Ltd. is engaged in the business of
+                      domestic call centre. Silgate expects each person to
+                      conduct themselves at all times with proper decorum.
+                      Likewise, the company has established certain rules and
+                      regulations to protect it assets and goodwill. The
+                      following Rules and Regulations shall apply to all persons
+                      while in the premise at all times including break times
+                      and work done on off-day, rest day etc.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      1. Shift Details
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Your shift timings will be 10:00 AM to 7:00 PM,
+                        reporting time will be 9:45 AM.
+                      </li>
+                      <li>
+                        The salary cycle is 1st to 30th and the salary date is
+                        any day in the 2nd week of the month.
+                      </li>
+                      <li>Sunday&apos;s will be weekly off.</li>
+                      <li>There will be a Service Agreement of 6 months.</li>
+                      <li>
+                        Your CL&apos;s will start after 6 months of the
+                        probation period, and PL&apos;s after completion of 1
+                        year.
+                      </li>
+                      <li>
+                        Dress code for Monday-Thursday is formals and
+                        Friday-Saturday is casuals.
+                      </li>
+                      <li>
+                        Targets and incentives are designed by operation team as
+                        per the company policy. Incentives are subject to change
+                        as per quality parameters and Client Rejections.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      2. Code of Conduct
+                    </h4>
+                    <ol className="list-[upper-alpha] pl-5 space-y-2">
+                      <li>
+                        Threatening, attempting, or doing bodily harm to another
+                        person.
+                      </li>
+                      <li>
+                        Threatening, intimidating, interfering with, or using
+                        abusive language towards others.
+                      </li>
+                      <li>Unauthorized possession of weapons.</li>
+                      <li>
+                        Making false or malicious statements concerning other
+                        employees, supervisors.
+                      </li>
+                      <li>
+                        Use of alcoholic beverages or illegal drugs during
+                        working hours.
+                      </li>
+                      <li>
+                        Reporting for work under the influence of alcoholic
+                        beverages or illegal drugs.
+                      </li>
+                      <li>Unauthorized solicitation for any purpose.</li>
+                      <li>
+                        Inappropriate dress or lack of personal hygiene which
+                        adversely affects proper performance of duties or
+                        constitutes a health or safety hazard.
+                      </li>
+                      <li>
+                        Unauthorized or improper use or possession of uniforms,
+                        identification cards, badges, or permits.
+                      </li>
+                      <li>
+                        Failure to exercise good judgment, or being
+                        discourteous, in dealing with fellow employees or the
+                        general public.
+                      </li>
+                      <li>
+                        Smoking is strictly prohibited in the Company&apos;s
+                        premise.
+                      </li>
+                      <li>
+                        All employees are strictly prohibited to eat in the
+                        Company&apos;s premise except in the cafeteria.
+                      </li>
+                      <li>
+                        You will not carry on any business or enter for any part
+                        of your time in any capacity in the services of other
+                        person or persons and company or companies. You will
+                        devote your whole time and attention to your duties to
+                        promote the interests of our organizations and you will
+                        not utilize or divulge to any person or persons any of
+                        our trade secrets or confidential information.
+                      </li>
+                      <li>
+                        You will not mislead the prospect/ Customer on any
+                        service /product offered.
+                      </li>
+                      <li>
+                        You will not mislead the prospect/ Customer about their
+                        business or organization&apos;s name or falsely
+                        represent themselves.
+                      </li>
+                      <li>
+                        You will not make any false / unauthorized commitment on
+                        behalf of any client for any facility / service.
+                      </li>
+                    </ol>
+                    <p className="mt-4 font-medium text-gray-800">
+                      If any employees are found guilty for any of above
+                      mentioned code of conduct strict action and legal action
+                      will be taken against them as per company policy.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      3. Training Module
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Training will be un- paid or paid depends on process to
+                        process.
+                      </li>
+                      <li>Training period depends on the process.</li>
+                      <li>
+                        During the said period you will undergo through a
+                        certification process from client&apos;s end.
+                      </li>
+                      <li>
+                        If you fail to clear the client certification, then you
+                        will not be entitled to work further with Silgate
+                        Solutions Ltd and will not be eligible for any payments
+                        of training.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      4. Attendance on Floor
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Your Attendance will be deducted on the basis of your
+                        per day salary.
+                      </li>
+                      <li>
+                        Your Salary will be placed on hold if you do not meet
+                        the below required criteria for attendance:
+                        <ul className="list-[circle] pl-5 mt-2 space-y-1">
+                          <li>If you remain absent for 2 or more days.</li>
+                          <li>If you remain absent between (1st- 9th).</li>
+                        </ul>
+                      </li>
+                      <li>
+                        If you remain absent for more than 2 days without any
+                        prior intimation or notice, then you will be considered
+                        as absconding.
+                      </li>
+                      <li>
+                        Absconding agents will not be entitled for due salary or
+                        any other benefits from the company.
+                      </li>
+                      <li>
+                        Each day your attendance will be marked on the basis of
+                        your log-in and log-out timings.
+                      </li>
+                      <li>
+                        If you fail to log in or log-out any day, then it will
+                        be counted as a login error and fine for it is rs.100/-
+                        each time.
+                      </li>
+                      <li>
+                        No leaves will be allowed during training &amp;
+                        probation period.
+                      </li>
+                      <li>
+                        Resignation during probation period will not be
+                        accepted.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      5. Resignation &amp; Notice Period
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Notice period after completion of the SA will be minimum
+                        1 month.
+                      </li>
+                      <li>
+                        During Resignation period or if you resign you will be
+                        not be eligible for any pending incentives from client
+                        and company apart from salary.
+                      </li>
+                      <li>
+                        Your dues with the company will be cleared in the time
+                        span of 45 days from your date of resignation.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      6. Confidentiality
+                    </h4>
+                    <p>
+                      You acknowledge that during the course of your employment
+                      with the Company, you will become familiar with the
+                      company&apos;s trade secrets and with other confidential
+                      information concerning the Company and its associates and
+                      related Companies and that your services will be of a
+                      special unique and extraordinary value to the Company. You
+                      agree that during, the term hereof and for five years
+                      thereafter, you shall not directly or indirectly own,
+                      manage, control, participate in, consult with, render
+                      services for, or engage in any business competing with the
+                      businesses of the Company or its associates, subsidiaries
+                      or related Companies within India.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      7. Data Breach or Fraud
+                    </h4>
+                    <p>
+                      In the event of any data breach or fraudulent activity
+                      involving customer data, Company reserves the right to
+                      take immediate legal action. This may include initiating a
+                      police complaint and pursuing civil remedies against the
+                      responsible individuals. Such actions will be taken in
+                      accordance with applicable laws and regulations.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      8. Disciplinary Action
+                    </h4>
+                    <p>
+                      Disciplinary action will be taken if you fail to abide by
+                      these terms and conditions mentioned in the undertaking.
+                    </p>
+                  </section>
+
+                  <section className="border-t border-gray-200 pt-6">
+                    <h4 className="font-bold text-gray-900 mb-3">
+                      Candidate Acknowledgement
+                    </h4>
+                    <p className="font-medium">
+                      I have read the above mentioned terms and condition and I
+                      agree to follow them as per company policy.
+                    </p>
+                  </section>
+                </div>
               </div>
             </div>
 
