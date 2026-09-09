@@ -2182,9 +2182,9 @@ const Step1Personal = ({ isMobile }) => {
                     className="hidden"
                   />
 
-                  <p className="mt-4 text-[10px] font-black text-zinc-400 uppercase tracking-widest">
+                  {/* <p className="mt-4 text-[10px] font-black text-zinc-400 uppercase tracking-widest">
                     JPG, PNG, WEBP • Maximum 5MB
-                  </p>
+                  </p> */}
                 </div>
               </>
             )}
