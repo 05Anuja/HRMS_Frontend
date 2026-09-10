@@ -488,8 +488,8 @@ const UploadDocuments = () => {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-50">
-        <div className="rounded-xl bg-white px-8 py-6 shadow">
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-3">
+        <div className="w-full max-w-sm rounded-2xl bg-white px-5 py-6 text-center shadow sm:px-8">
           <p className="text-gray-600">Verifying upload link...</p>
         </div>
       </div>
@@ -502,8 +502,8 @@ const UploadDocuments = () => {
 
   if (!verifiedId) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
-        <div className="max-w-md rounded-xl bg-white p-8 text-center shadow">
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-3 py-5 sm:px-4">
+        <div className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow sm:p-8">
           <h2 className="text-xl font-bold text-red-600">
             Invalid Upload Link
           </h2>
@@ -522,8 +522,8 @@ const UploadDocuments = () => {
 
   if (submitted) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
-        <div className="w-full max-w-lg rounded-2xl bg-white p-10 text-center shadow-lg">
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-3 py-5 sm:px-4">
+        <div className="w-full max-w-lg rounded-2xl bg-white p-6 text-center shadow-lg sm:p-10">
           {/* Success Icon */}
 
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
@@ -559,7 +559,7 @@ const UploadDocuments = () => {
 
           {/* Status */}
 
-          <div className="mt-6 rounded-lg border border-green-200 bg-green-50 px-4 py-3">
+          <div className="mt-5 rounded-lg border border-green-200 bg-green-50 px-4 py-3 sm:mt-6">
             <p className="text-sm font-medium text-green-700">
               Document Status: Submitted
             </p>
@@ -575,7 +575,7 @@ const UploadDocuments = () => {
 
           {/* Footer */}
 
-          <p className="mt-6 text-xs text-slate-400">
+          <p className="mt-5 text-xs text-slate-400 sm:mt-6">
             You can now safely close this page.
           </p>
         </div>
@@ -588,18 +588,18 @@ const UploadDocuments = () => {
   // ============================================================
 
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-8">
-      <div className="mx-auto max-w-5xl">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-slate-50 px-3 py-4 sm:px-4 sm:py-8">
+      <div className="mx-auto w-full max-w-5xl min-w-0">
         {/* ==================================================
                     HEADER
                 ================================================== */}
 
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-slate-800">
+        <div className="mb-5 sm:mb-6">
+          <h1 className="text-xl font-bold text-slate-800 sm:text-2xl">
             Upload Documents
           </h1>
 
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
             Please upload all required onboarding documents.
           </p>
         </div>
@@ -609,13 +609,13 @@ const UploadDocuments = () => {
                 ================================================== */}
 
         <div
-          className={`mb-6 rounded-xl border p-5 ${
+          className={`mb-5 w-full rounded-xl border p-4 sm:mb-6 sm:p-5 ${
             documentsStatus === "Submitted"
               ? "border-green-200 bg-green-50"
               : "border-yellow-200 bg-yellow-50"
           }`}
         >
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
             <div>
               <h3
                 className={`font-semibold ${
@@ -628,7 +628,7 @@ const UploadDocuments = () => {
               </h3>
 
               <p
-                className={`mt-1 text-sm ${
+                className={`mt-1 text-xs leading-5 sm:text-sm ${
                   documentsStatus === "Submitted"
                     ? "text-green-700"
                     : "text-yellow-700"
@@ -641,7 +641,7 @@ const UploadDocuments = () => {
             </div>
 
             <span
-              className={`shrink-0 rounded-full px-3 py-1 text-sm font-semibold ${
+              className={`shrink-0 self-start rounded-full px-3 py-1 text-xs font-semibold sm:self-auto sm:text-sm ${
                 documentsStatus === "Submitted"
                   ? "bg-green-100 text-green-700"
                   : "bg-yellow-100 text-yellow-700"
@@ -656,14 +656,14 @@ const UploadDocuments = () => {
                     NOTICE
                 ================================================== */}
 
-        <div className="mb-6 rounded-xl border border-yellow-200 bg-yellow-50 p-5">
+        <div className="mb-5 w-full rounded-xl border border-yellow-200 bg-yellow-50 p-4 sm:mb-6 sm:p-5">
           <h3 className="font-semibold text-yellow-800">Important</h3>
 
-          <p className="mt-2 text-sm text-yellow-700">
+          <p className="mt-2 text-xs leading-5 text-yellow-700 sm:text-sm">
             Selecting a document does not upload it immediately.
           </p>
 
-          <p className="mt-1 text-sm font-medium text-yellow-800">
+          <p className="mt-1 text-xs font-medium leading-5 text-yellow-800 sm:text-sm">
             All documents will be uploaded only after clicking "Submit
             Documents".
           </p>
@@ -683,19 +683,19 @@ const UploadDocuments = () => {
             return (
               <div
                 key={document.key}
-                className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+                className="w-full min-w-0 rounded-xl border border-slate-200 bg-white p-3 shadow-sm sm:p-5"
               >
-                <div className="flex gap-4">
+                <div className="flex min-w-0 items-start gap-2.5 sm:gap-4">
                   {/* Number */}
 
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-800 text-sm font-bold text-white">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-white sm:h-10 sm:w-10 sm:text-sm">
                     {document.number}
                   </div>
 
                   {/* Content */}
 
-                  <div className="flex-1">
-                    <h2 className="font-semibold text-slate-800">
+                  <div className="min-w-0 flex-1">
+                    <h2 className="break-words font-semibold text-slate-800">
                       {document.title}
 
                       {document.required ? (
@@ -709,13 +709,13 @@ const UploadDocuments = () => {
                       )}
                     </h2>
 
-                    <p className="mt-1 text-sm text-slate-500">
+                    <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
                       {document.description}
                     </p>
 
                     {/* FILE INPUT */}
 
-                    <div className="mt-4">
+                    <div className="mt-3 sm:mt-4">
                       <input
                         id={document.key}
                         type="file"
@@ -728,7 +728,7 @@ const UploadDocuments = () => {
 
                       <label
                         htmlFor={document.key}
-                        className="flex cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-slate-300 bg-slate-50 px-5 py-6 hover:border-blue-400 hover:bg-blue-50"
+                        className="flex min-h-28 cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-slate-300 bg-slate-50 px-3 py-5 transition hover:border-blue-400 hover:bg-blue-50 sm:px-5 sm:py-6"
                       >
                         <div className="text-center">
                           <p className="text-sm font-medium text-slate-700">
@@ -737,7 +737,7 @@ const UploadDocuments = () => {
                               : "Click to select file"}
                           </p>
 
-                          <p className="mt-1 text-xs text-slate-400">
+                          <p className="mt-1 text-[11px] leading-4 text-slate-400 sm:text-xs">
                             {isMultiple
                               ? "You can select multiple files"
                               : "PDF, JPG, JPEG or PNG"}{" "}
@@ -755,10 +755,10 @@ const UploadDocuments = () => {
                           selectedFile.map((file, index) => (
                             <div
                               key={`${file.name}-${index}`}
-                              className="flex items-center justify-between rounded-lg bg-slate-100 px-4 py-3"
+                              className="flex w-full min-w-0 flex-col gap-2 rounded-lg bg-slate-100 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-4"
                             >
                               <div className="min-w-0">
-                                <p className="truncate text-sm font-medium text-slate-700">
+                                <p className="break-words text-sm font-medium text-slate-700">
                                   📄 {file.name}
                                 </p>
 
@@ -773,7 +773,7 @@ const UploadDocuments = () => {
                                   onClick={() =>
                                     removeFile(document.key, index)
                                   }
-                                  className="ml-4 text-sm font-medium text-red-500 hover:text-red-700"
+                                  className="w-full text-left text-sm font-medium text-red-500 hover:text-red-700 sm:ml-4 sm:w-auto sm:self-auto sm:text-right"
                                 >
                                   Remove
                                 </button>
@@ -781,9 +781,9 @@ const UploadDocuments = () => {
                             </div>
                           ))
                         ) : (
-                          <div className="flex items-center justify-between rounded-lg bg-slate-100 px-4 py-3">
+                          <div className="flex w-full min-w-0 flex-col gap-2 rounded-lg bg-slate-100 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
                             <div className="min-w-0">
-                              <p className="truncate text-sm font-medium text-slate-700">
+                              <p className="break-words text-sm font-medium text-slate-700">
                                 📄 {selectedFile.name}
                               </p>
 
@@ -797,7 +797,7 @@ const UploadDocuments = () => {
                               <button
                                 type="button"
                                 onClick={() => removeFile(document.key)}
-                                className="ml-4 text-sm font-medium text-red-500 hover:text-red-700"
+                                className="w-full text-left text-sm font-medium text-red-500 hover:text-red-700 sm:ml-4 sm:w-auto sm:self-auto sm:text-right"
                               >
                                 Remove
                               </button>
@@ -817,11 +817,11 @@ const UploadDocuments = () => {
                     SUBMIT
                 ================================================== */}
 
-        <div className="mt-6 flex flex-col items-center justify-between gap-4 rounded-xl border border-slate-200 bg-white p-5 sm:flex-row">
+        <div className="mt-5 flex w-full min-w-0 flex-col gap-4 rounded-xl border border-slate-200 bg-white p-4 sm:mt-6 sm:flex-row sm:items-center sm:justify-between sm:p-5">
           <div>
             <p className="font-semibold text-slate-800">Ready to submit?</p>
 
-            <p className="mt-1 text-sm text-slate-500">
+            <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
               Make sure all required documents are selected.
             </p>
           </div>
@@ -830,7 +830,7 @@ const UploadDocuments = () => {
             type="button"
             onClick={handleSubmitDocuments}
             disabled={submitting || submitted}
-            className="rounded-lg bg-green-600 px-7 py-3 font-semibold text-white hover:bg-green-700 disabled:cursor-not-allowed disabled:bg-gray-400"
+            className="w-full min-h-12 rounded-lg bg-green-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-green-700 active:bg-green-800 disabled:cursor-not-allowed disabled:bg-gray-400 sm:w-auto sm:px-7"
           >
             {submitting
               ? "Submitting..."
